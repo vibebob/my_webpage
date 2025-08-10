@@ -1,11 +1,11 @@
 export const resumeData = {
   personal: {
-    name: "[성명]",
+    name: "[성명]", // 실제 이름으로 수정
     title: "공공사업 기획/운영 전문가",
     subtitle: "그립컴퍼니 상상협력팀 지원",
     contact: {
-      email: "[이메일]",
-      phone: "[전화번호]",
+      email: "[이메일]", // 실제 이메일로 수정
+      phone: "[전화번호]", // 실제 전화번호로 수정
       education: "신문방송학과"
     }
   },
@@ -13,7 +13,7 @@ export const resumeData = {
     {
       company: "코드스테이츠, 로커스",
       position: "사업기획",
-      period: "20XX.XX - 20XX.XX (약 2년)",
+      period: "20XX.XX - 20XX.XX (약 2년)", // 실제 기간으로 수정
       achievements: [
         "정부/지자체 대상 협력사업 기획 및 운영",
         "각종 제안서 작성 및 입찰 참여 → 다수 입찰 성공",
@@ -24,7 +24,7 @@ export const resumeData = {
     {
       company: "경기콘텐츠진흥원",
       position: "사업기획",
-      period: "20XX.XX - 20XX.XX (약 2년)",
+      period: "20XX.XX - 20XX.XX (약 2년)", // 실제 기간으로 수정
       achievements: [
         "공공 정책사업 기획 및 실행",
         "민간 파트너사와의 협업 프로젝트 관리",
