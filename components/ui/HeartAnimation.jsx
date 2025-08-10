@@ -6,7 +6,7 @@ import { Heart } from 'lucide-react';
 export default function HeartAnimation() {
   return (
     <motion.div
-      className="absolute top-4 right-4 heart-animation"
+      className="absolute top-16 right-4 heart-animation"
       animate={{ 
         y: [0, -20, 0],
         scale: [1, 1.2, 1],
@@ -18,7 +18,7 @@ export default function HeartAnimation() {
         ease: "easeInOut"
       }}
     >
-      <Heart size={24} fill="currentColor" />
+      <Heart size={20} fill="currentColor" />
     </motion.div>
   );
 }
