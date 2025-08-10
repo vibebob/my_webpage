@@ -1,0 +1,40 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .live-badge {
+    @apply bg-live-red text-white px-3 py-1 rounded-full text-sm font-bold animate-live-pulse;
+  }
+  
+  .heart-animation {
+    @apply text-grip-pink animate-heart-float;
+  }
+  
+  .chat-bubble {
+    @apply bg-gray-100 rounded-2xl px-4 py-2 max-w-xs;
+  }
+  
+  .chat-bubble-own {
+    @apply bg-grip-red text-white rounded-2xl px-4 py-2 max-w-xs ml-auto;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+}
