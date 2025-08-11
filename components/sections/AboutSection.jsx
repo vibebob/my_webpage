@@ -15,10 +15,10 @@ export default function AboutSection({ introduction, strengths }) {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            📦 상품 소개
+            📦 지원자 소개
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            그립에서 만나볼 수 있는 특별한 크리에이터를 소개합니다
+            부족함을 매울 수 있는 열정을 지닌 지원자를 소개합니다
           </p>
         </motion.div>
 

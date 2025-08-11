@@ -35,7 +35,7 @@ export default function SkillsSection({ skills }) {
             💬 실시간 Q&A
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            면접관과의 실시간 대화를 통해 핵심 역량을 확인해보세요
+            지원자의 핵심 역량을 확인해보세요!
           </p>
         </motion.div>
 
