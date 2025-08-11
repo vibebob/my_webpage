@@ -1,21 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageCircle, User, CheckCircle } from 'lucide-react';
+import { MessageCircle, CheckCircle } from 'lucide-react';
 import ChatMessage from '../ui/ChatMessage';
 import SkillCard from '../ui/SkillCard';
 
 export default function SkillsSection({ skills }) {
   const chatMessages = [
-    { message: "공공사업 경험이 어느 정도인가요?", isOwn: false },
-    { message: "✅ 정부/지자체 협력사업 5년 경험", isOwn: true },
-    { message: "✅ 제안서 작성 및 입찰 성공 다수", isOwn: true },
-    { message: "데이터 분석 능력은 어떠신가요?", isOwn: false },
-    { message: "✅ AI 도구 활용 및 데이터 기반 의사결정", isOwn: true },
-    { message: "✅ 디지털 플랫폼 비즈니스 모델 이해", isOwn: true },
+    { message: "공공사업 경험이 있나요?", isOwn: false },
+    { message: "✅ 정부/지자체 입장에서 사업 기획 경험", isOwn: true },
+    { message: "✅ 기업 입장에서 제안서 작성 및 운영 경험", isOwn: true },
+    { message: "정산, 온보딩 등 운영 업무 경험은?", isOwn: false },
+    { message: "✅ 다양한 기업 대상 운영 업무 수행 ", isOwn: true },
+    { message: "✅ 소상공인 대상 사업 진행 경험", isOwn: true },
+    { message: "커머셜 플랫폼 이해하고 있으신가요?", isOwn: false },
+    { message: "✅ 리테일 테크 사업 및 IT 학습", isOwn: true },
+    { message: "✅ 소비자입장에서도 많이 이용하고 있음", isOwn: true },
     { message: "커뮤니케이션 능력은?", isOwn: false },
-    { message: "✅ 다양한 이해관계자 대상 협상 경험", isOwn: true },
-    { message: "✅ 프로젝트 전주기 관리 능력", isOwn: true },
+    { message: "✅ 다양한 분야의 이해관계자와 소통", isOwn: true },
+    { message: "✅ 프로젝트 관리를 위한 내부 소통 능력 보유", isOwn: true },
   ];
 
   return (
@@ -82,41 +85,6 @@ export default function SkillsSection({ skills }) {
               </div>
             </motion.div>
 
-            {/* 기술 역량 */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <CheckCircle className="text-accent-blue" size={24} />
-                기술 역량
-              </h3>
-              <div className="grid gap-4">
-                {skills.technical.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} delay={index * 0.1} />
-                ))}
-              </div>
-            </motion.div>
-
-            {/* 커뮤니케이션 */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <CheckCircle className="text-success-green" size={24} />
-                커뮤니케이션
-              </h3>
-              <div className="grid gap-4">
-                {skills.communication.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} delay={index * 0.1} />
-                ))}
-              </div>
-            </motion.div>
           </div>
         </div>
 

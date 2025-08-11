@@ -1,14 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Eye, Mail, Phone, GraduationCap, ArrowLeft, Share, MoreVertical } from 'lucide-react';
+import { Mail, Phone, GraduationCap, ArrowLeft, Share, MoreVertical } from 'lucide-react';
 import LiveBadge from '../ui/LiveBadge';
 import HeartAnimation from '../ui/HeartAnimation';
 import PhoneFrame from '../ui/PhoneFrame';
 
 export default function HeroSection({ personal }) {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden pt-20">
       {/* 배경 장식 */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
@@ -42,11 +42,11 @@ export default function HeroSection({ personal }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            그립 라이브 방송
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 mt-8">
+            공공사업 기획/운영 지원자 김도연 
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            실제 그립 앱에서 진행되는 라이브 방송을 체험해보세요
+            지원자에게 궁금한 점이 있으신가요? 바로 라이브로 확인하세요! 
           </p>
         </motion.div>
 
@@ -66,7 +66,7 @@ export default function HeroSection({ personal }) {
               
               <div className="flex items-center gap-2">
                 <LiveBadge />
-                <span className="text-white text-xs font-medium">1,247명 시청 중</span>
+                <span className="text-white text-xs font-medium">152명 시청 중</span>
               </div>
               
               <div className="flex items-center gap-2">
@@ -194,9 +194,7 @@ export default function HeroSection({ personal }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
         >
-          <p className="text-gray-600 text-sm">
-            실제 그립 앱의 라이브 방송 인터페이스를 모방한 자기소개 페이지입니다
-          </p>
+
         </motion.div>
       </div>
     </section>
